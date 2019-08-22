@@ -1,7 +1,7 @@
 # code here!'
 
 class School
-	attr_accessor :roster, :name, :grade 
+	attr_accessor :roster
 	attr_reader :domain 
   
   def initialize(domain)
@@ -18,8 +18,8 @@ class School
     end
   end
  
-  def grade(number)
-    @roster[number]
+  def grade(grades)
+    @roster[grades]
   end
   
   def sort
